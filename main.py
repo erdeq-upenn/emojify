@@ -149,5 +149,6 @@ def main():
     e = emojify('aaa')
     print(e.get_name())
 
+
 if __name__ == '__main__':
     main()
