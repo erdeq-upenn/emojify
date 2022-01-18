@@ -85,9 +85,9 @@ def print_predictions(X, pred):
 
 
 def plot_confusion_matrix(y_actu, y_pred, title='Confusion matrix', cmap=plt.cm.gray_r):
-"""
-plot the confusion matrix
-"""
+    """
+    plot the confusion matrix
+    """
     df_confusion = pd.crosstab(y_actu, y_pred.reshape(y_pred.shape[0],), rownames=['Actual'], colnames=['Predicted'], margins=True)
 
     df_conf_norm = df_confusion / df_confusion.sum(axis=1)
